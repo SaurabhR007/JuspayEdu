@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B0608591F03AA31006C7573 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0608581F03AA31006C7573 /* main.m */; };
+		9B06085C1F03AA31006C7573 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B06085B1F03AA31006C7573 /* AppDelegate.m */; };
+		9B06085F1F03AA31006C7573 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B06085E1F03AA31006C7573 /* ViewController.m */; };
+		9B0608621F03AA31006C7573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0608601F03AA31006C7573 /* Main.storyboard */; };
+		9B0608641F03AA31006C7573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0608631F03AA31006C7573 /* Assets.xcassets */; };
+		9B0608671F03AA32006C7573 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0608651F03AA32006C7573 /* LaunchScreen.storyboard */; };
+		9B0608731F03BF59006C7573 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0608721F03BF59006C7573 /* HomeViewController.m */; };
+		9B0608751F03EFF2006C7573 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B0608741F03EFF2006C7573 /* GoogleService-Info.plist */; };
+		9B06087F1F067D2E006C7573 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B06087E1F067D2E006C7573 /* SignInViewController.m */; };
+		9B0608821F068007006C7573 /* UserCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0608811F068007006C7573 /* UserCredentials.m */; };
+		9B0608851F069413006C7573 /* AlertsWithVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0608841F069413006C7573 /* AlertsWithVC.m */; };
+		9BA1722E1F0A1C820096C166 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1722D1F0A1C820096C166 /* Constants.m */; };
+		9BA172311F0B98DA0096C166 /* FormValidations.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA172301F0B98DA0096C166 /* FormValidations.m */; };
+		D6BCD5623542D6128D28C4E1 /* libPods-JuspayEdu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 774F1ADA11C54E6598763E3E /* libPods-JuspayEdu.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26B359DDD72210249E50A3BB /* Pods-JuspayEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuspayEdu.release.xcconfig"; path = "Pods/Target Support Files/Pods-JuspayEdu/Pods-JuspayEdu.release.xcconfig"; sourceTree = "<group>"; };
+		774F1ADA11C54E6598763E3E /* libPods-JuspayEdu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JuspayEdu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0608541F03AA31006C7573 /* JuspayEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuspayEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0608581F03AA31006C7573 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B06085A1F03AA31006C7573 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B06085B1F03AA31006C7573 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B06085D1F03AA31006C7573 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9B06085E1F03AA31006C7573 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B0608611F03AA31006C7573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B0608631F03AA31006C7573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B0608661F03AA32006C7573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B0608681F03AA32006C7573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0608711F03BF59006C7573 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../HomeViewController.h; sourceTree = "<group>"; };
+		9B0608721F03BF59006C7573 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../HomeViewController.m; sourceTree = "<group>"; };
+		9B0608741F03EFF2006C7573 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B06087D1F067D2E006C7573 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		9B06087E1F067D2E006C7573 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		9B0608801F068007006C7573 /* UserCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCredentials.h; sourceTree = "<group>"; };
+		9B0608811F068007006C7573 /* UserCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCredentials.m; sourceTree = "<group>"; };
+		9B0608831F069413006C7573 /* AlertsWithVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertsWithVC.h; sourceTree = "<group>"; };
+		9B0608841F069413006C7573 /* AlertsWithVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertsWithVC.m; sourceTree = "<group>"; };
+		9BA1722C1F0A1C820096C166 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9BA1722D1F0A1C820096C166 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		9BA1722F1F0B98DA0096C166 /* FormValidations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormValidations.h; sourceTree = "<group>"; };
+		9BA172301F0B98DA0096C166 /* FormValidations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormValidations.m; sourceTree = "<group>"; };
+		B269AE68A797F64C32CC67AD /* Pods-JuspayEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JuspayEdu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JuspayEdu/Pods-JuspayEdu.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B0608511F03AA31006C7573 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6BCD5623542D6128D28C4E1 /* libPods-JuspayEdu.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		831B1BF6ED4405CBC89F1156 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				774F1ADA11C54E6598763E3E /* libPods-JuspayEdu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9408ACC6B36F4BD57922D479 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B269AE68A797F64C32CC67AD /* Pods-JuspayEdu.debug.xcconfig */,
+				26B359DDD72210249E50A3BB /* Pods-JuspayEdu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B06084B1F03AA31006C7573 = {
+			isa = PBXGroup;
+			children = (
+				9B0608561F03AA31006C7573 /* JuspayEdu */,
+				9B0608551F03AA31006C7573 /* Products */,
+				9408ACC6B36F4BD57922D479 /* Pods */,
+				831B1BF6ED4405CBC89F1156 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B0608551F03AA31006C7573 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B0608541F03AA31006C7573 /* JuspayEdu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B0608561F03AA31006C7573 /* JuspayEdu */ = {
+			isa = PBXGroup;
+			children = (
+				9B06087B1F065133006C7573 /* AppDelegate */,
+				9B06087A1F06511D006C7573 /* Utility */,
+				9B0608791F06510F006C7573 /* HomeVC */,
+				9B06087C1F065174006C7573 /* loginVC */,
+				9B0608781F065102006C7573 /* SignUpVC */,
+				9B0608601F03AA31006C7573 /* Main.storyboard */,
+				9B0608631F03AA31006C7573 /* Assets.xcassets */,
+				9B0608651F03AA32006C7573 /* LaunchScreen.storyboard */,
+				9B0608741F03EFF2006C7573 /* GoogleService-Info.plist */,
+				9B0608681F03AA32006C7573 /* Info.plist */,
+				9B0608571F03AA31006C7573 /* Supporting Files */,
+			);
+			path = JuspayEdu;
+			sourceTree = "<group>";
+		};
+		9B0608571F03AA31006C7573 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B0608581F03AA31006C7573 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B0608781F065102006C7573 /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				9B06085D1F03AA31006C7573 /* ViewController.h */,
+				9B06085E1F03AA31006C7573 /* ViewController.m */,
+			);
+			name = SignUpVC;
+			sourceTree = "<group>";
+		};
+		9B0608791F06510F006C7573 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				9B0608711F03BF59006C7573 /* HomeViewController.h */,
+				9B0608721F03BF59006C7573 /* HomeViewController.m */,
+			);
+			name = HomeVC;
+			sourceTree = "<group>";
+		};
+		9B06087A1F06511D006C7573 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9B0608801F068007006C7573 /* UserCredentials.h */,
+				9B0608811F068007006C7573 /* UserCredentials.m */,
+				9B0608831F069413006C7573 /* AlertsWithVC.h */,
+				9B0608841F069413006C7573 /* AlertsWithVC.m */,
+				9BA1722C1F0A1C820096C166 /* Constants.h */,
+				9BA1722D1F0A1C820096C166 /* Constants.m */,
+				9BA1722F1F0B98DA0096C166 /* FormValidations.h */,
+				9BA172301F0B98DA0096C166 /* FormValidations.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		9B06087B1F065133006C7573 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9B06085A1F03AA31006C7573 /* AppDelegate.h */,
+				9B06085B1F03AA31006C7573 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9B06087C1F065174006C7573 /* loginVC */ = {
+			isa = PBXGroup;
+			children = (
+				9B06087D1F067D2E006C7573 /* SignInViewController.h */,
+				9B06087E1F067D2E006C7573 /* SignInViewController.m */,
+			);
+			name = loginVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B0608531F03AA31006C7573 /* JuspayEdu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B06086B1F03AA32006C7573 /* Build configuration list for PBXNativeTarget "JuspayEdu" */;
+			buildPhases = (
+				F4A2B71EBAB9131DCD1DFAE7 /* [CP] Check Pods Manifest.lock */,
+				9B0608501F03AA31006C7573 /* Sources */,
+				9B0608511F03AA31006C7573 /* Frameworks */,
+				9B0608521F03AA31006C7573 /* Resources */,
+				E9F75A14012F91E650F872A5 /* [CP] Embed Pods Frameworks */,
+				6D0AC3BB253F4E69DC9B5E87 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JuspayEdu;
+			productName = JuspayEdu;
+			productReference = 9B0608541F03AA31006C7573 /* JuspayEdu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B06084C1F03AA31006C7573 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "saurabhrode@gmail.com";
+				TargetAttributes = {
+					9B0608531F03AA31006C7573 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 49K755643D;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9B06084F1F03AA31006C7573 /* Build configuration list for PBXProject "JuspayEdu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B06084B1F03AA31006C7573;
+			productRefGroup = 9B0608551F03AA31006C7573 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B0608531F03AA31006C7573 /* JuspayEdu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B0608521F03AA31006C7573 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0608671F03AA32006C7573 /* LaunchScreen.storyboard in Resources */,
+				9B0608751F03EFF2006C7573 /* GoogleService-Info.plist in Resources */,
+				9B0608641F03AA31006C7573 /* Assets.xcassets in Resources */,
+				9B0608621F03AA31006C7573 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D0AC3BB253F4E69DC9B5E87 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuspayEdu/Pods-JuspayEdu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9F75A14012F91E650F872A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JuspayEdu/Pods-JuspayEdu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4A2B71EBAB9131DCD1DFAE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B0608501F03AA31006C7573 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B0608851F069413006C7573 /* AlertsWithVC.m in Sources */,
+				9B06085F1F03AA31006C7573 /* ViewController.m in Sources */,
+				9B06087F1F067D2E006C7573 /* SignInViewController.m in Sources */,
+				9B0608821F068007006C7573 /* UserCredentials.m in Sources */,
+				9B06085C1F03AA31006C7573 /* AppDelegate.m in Sources */,
+				9B0608731F03BF59006C7573 /* HomeViewController.m in Sources */,
+				9BA172311F0B98DA0096C166 /* FormValidations.m in Sources */,
+				9B0608591F03AA31006C7573 /* main.m in Sources */,
+				9BA1722E1F0A1C820096C166 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B0608601F03AA31006C7573 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B0608611F03AA31006C7573 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B0608651F03AA32006C7573 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B0608661F03AA32006C7573 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B0608691F03AA32006C7573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9B06086A1F03AA32006C7573 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B06086C1F03AA32006C7573 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B269AE68A797F64C32CC67AD /* Pods-JuspayEdu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49K755643D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JuspayEdu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SRG.JuspayEdu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9B06086D1F03AA32006C7573 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B359DDD72210249E50A3BB /* Pods-JuspayEdu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 49K755643D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JuspayEdu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SRG.JuspayEdu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B06084F1F03AA31006C7573 /* Build configuration list for PBXProject "JuspayEdu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B0608691F03AA32006C7573 /* Debug */,
+				9B06086A1F03AA32006C7573 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B06086B1F03AA32006C7573 /* Build configuration list for PBXNativeTarget "JuspayEdu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B06086C1F03AA32006C7573 /* Debug */,
+				9B06086D1F03AA32006C7573 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B06084C1F03AA31006C7573 /* Project object */;
+}
