@@ -1,1 +1,0 @@
-../../../../C2Call-SDK/Pod/Classes/SocialCommunication.h

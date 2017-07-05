@@ -140,7 +140,7 @@
                  NSString * longitude1 = [NSString stringWithFormat:@"%f",currentLocation.coordinate.longitude];
                  NSString * email1 =[[UserCredentials sharedMySingleton]getEmailId];
                  NSString * username1 =[[UserCredentials  sharedMySingleton]getUserName];
-                 NSString * uid = [[UserCredentials sharedMySingleton]getuid];
+                 NSString * uid1 = [[UserCredentials sharedMySingleton]getuid];
                  NSString * domain1 =[[UserCredentials sharedMySingleton]getUserDomain];
                  NSString * linkedin1=[[UserCredentials sharedMySingleton]getlinkedin];
                  NSString * youtube1 =[[UserCredentials sharedMySingleton]getyoutube];
@@ -152,16 +152,16 @@
                  if ([domain1 isEqualToString:teacher]) {
                      NSDictionary * userDictionary =@{email:email1,longitude:longitude1,latitude:latitude1,
                                                       area:Area,linkedin:linkedin1,youtubelink:youtube1,
-                                                      skills:skills1,mobilenumber:mobile,username:username1,domain:domain1};
+                                                      skills:skills1,mobilenumber:mobile,username:username1,domain:domain1,uid:uid1};
                      
-                     [[[self.ref child:teachernode]child:uid]setValue:userDictionary];
+                     [[[self.ref child:teachernode]child:uid1]setValue:userDictionary];
                      
                  }else if([domain1 isEqualToString:learner]){
                      NSDictionary * userDictionary =@{email:email1,longitude:longitude1,latitude:latitude1,
                                                       area:Area,linkedin:linkedin1,youtubelink:youtube1,
-                                                      skills:skills1,mobilenumber:mobile,username:username1,domain:domain1};
+                                                      skills:skills1,mobilenumber:mobile,username:username1,domain:domain1,uid:uid1};
                      
-                     [[[self.ref child:learnernode]child:uid]setValue:userDictionary];
+                     [[[self.ref child:learnernode]child:uid1]setValue:userDictionary];
                  }
                  [self loadViewGoogleMap:currentLocation];
                  [self readData];
@@ -201,7 +201,7 @@
 //    }];
     
     
-    NSString * uid = [[UserCredentials sharedMySingleton]getuid];
+//    NSString * uid = [[UserCredentials sharedMySingleton]getuid];
     
     NSString * domain2 =[[UserCredentials sharedMySingleton]getUserDomain];
     NSString * node2;
@@ -213,7 +213,7 @@
     }
     geoFire = [[GeoFire alloc] initWithFirebaseRef:[self.ref child:users]];
     [geoFire setLocation:currentLocation
-                  forKey:[[UserCredentials sharedMySingleton]getmobilenumber]
+                  forKey:[[UserCredentials sharedMySingleton]getuid]
      withCompletionBlock:^(NSError *error) {
          if (error != nil) {
              NSLog(@"An error occurred: %@", error);
@@ -223,12 +223,12 @@
      }];
     
     
-    // Query locations at [37.7832889, -122.4056973] with a radius of 600 meters
-    GFCircleQuery *circleQuery = [geoFire queryAtLocation:currentLocation withRadius:0.7];
+  
+    GFCircleQuery *circleQuery = [geoFire queryAtLocation:currentLocation withRadius:1.0];
     MKCoordinateSpan span = MKCoordinateSpanMake(0.001, 0.001);
     MKCoordinateRegion region = MKCoordinateRegionMake(currentLocation.coordinate, span);
-    GFRegionQuery *regionQuery = [geoFire queryWithRegion:region];
-     NSMutableArray *runnersNearby = [[NSMutableArray alloc]init];
+//    GFRegionQuery *regionQuery = [geoFire queryWithRegion:region];
+     NSMutableArray *usersNearby = [[NSMutableArray alloc]init];
     
     [circleQuery observeEventType:GFEventTypeKeyEntered withBlock:^(NSString *uid, CLLocation *location) {
         NSLog(@"Key '%@' entered the search area and is at location '%@'", uid, location);
@@ -236,14 +236,14 @@
         
   
         
-        [runnersNearby addObject:uid];
+        [usersNearby addObject:uid];
        
     }];
     
     [circleQuery observeReadyWithBlock:^{
         NSLog(@"All initial data has been loaded and events have been fired!");
         
-        for (int i=0;i< runnersNearby.count;i++) {
+        for (int i=0;i< usersNearby.count;i++) {
             NSString * domain1 =[[UserCredentials sharedMySingleton]getUserDomain];
             NSString * node;
             if ([domain1 isEqualToString:teacher]) {
@@ -254,7 +254,7 @@
                 node=teachernode;
             }
             
-            [[[[self.ref child:node]queryOrderedByChild:mobilenumber]queryEqualToValue:runnersNearby[i]] observeEventType:FIRDataEventTypeChildAdded withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+            [[[[self.ref child:node]queryOrderedByChild:uid]queryEqualToValue:usersNearby[i]] observeEventType:FIRDataEventTypeChildAdded withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
                 
                 
                 

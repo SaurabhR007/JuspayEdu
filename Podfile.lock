@@ -1,13 +1,4 @@
 PODS:
-  - AWSCore (2.3.6)
-  - AWSS3 (2.3.6):
-    - AWSCore (= 2.3.6)
-  - C2Call-SDK (1.4.11):
-    - AWSCore (~> 2.3.5)
-    - AWSS3 (~> 2.3.5)
-    - Flurry-iOS-SDK/FlurryAds (~> 7.3)
-    - Flurry-iOS-SDK/FlurrySDK (~> 7.3)
-    - SBJson (~> 4.0)
   - Firebase/Auth (4.0.3):
     - Firebase/Core
     - FirebaseAuth (= 4.0.0)
@@ -38,9 +29,6 @@ PODS:
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - Flurry-iOS-SDK/FlurryAds (7.10.0):
-    - Flurry-iOS-SDK/FlurrySDK
-  - Flurry-iOS-SDK/FlurrySDK (7.10.0)
   - GeoFire (2.0.0):
     - Firebase/Database (~> 4.0)
   - GoogleMaps (2.3.1):
@@ -61,10 +49,8 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.10)
-  - SBJson (4.0.5)
 
 DEPENDENCIES:
-  - C2Call-SDK
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -83,9 +69,6 @@ CHECKOUT OPTIONS:
     :git: https://github.com/firebase/geofire-objc.git
 
 SPEC CHECKSUMS:
-  AWSCore: 917d84b32974136194a905b98c0ae25c9f3350b8
-  AWSS3: 1caaf6b45100503fecf3d418c394519a89409a74
-  C2Call-SDK: 7b412efebcdf9a8dcd488fd3f75e135b602e8881
   Firebase: 9e33fdfbca37cab635c693883caa90a4475b842b
   FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
   FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
@@ -93,14 +76,12 @@ SPEC CHECKSUMS:
   FirebaseDatabase: d829b3a8c3e2ac7a16773c5df226966b0805dfc2
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   FirebaseStorage: 8110a1ed2034c8fbfd83890d2acc9cdbbd99afec
-  Flurry-iOS-SDK: e6975df9e57010d582bf9bed0f6312553cf24bc2
   GeoFire: 02f02683e09367c2eee073c6b09c794da19833ee
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 30d874b96d0d76028f61fbd122801e3f030d47db
-  SBJson: af3137ccda22be3004487524da0a071c75d4251b
 
-PODFILE CHECKSUM: 0f4eac7c08f533dd8f0db301b5aca4d226b9aedc
+PODFILE CHECKSUM: 306c443dd02403ba4511e9529aab4a89583fe256
 
 COCOAPODS: 1.1.1

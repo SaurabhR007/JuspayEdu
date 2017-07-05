@@ -20,24 +20,6 @@
     return [emailTest evaluateWithObject:checkString];
 }
 
--(BOOL) NSStringIsValidMobileNumber:(NSString *)code{
-    
-    int ans=0;
-    for (int i=0 ;i < code.length ; i++){
-        
-        
-        int matchascii=([code characterAtIndex:i] - '0');
-        
-        if (matchascii < 47 || matchascii > 58)
-        {
-            return false;
-        }
-        
-        ans= ans * 10 + matchascii ;
-    }
-    
-    return true;
-}
 
 
 

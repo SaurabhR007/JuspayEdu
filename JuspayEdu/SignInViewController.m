@@ -11,10 +11,14 @@
 #import "HomeViewController.h"
 #import "AlertsWithVC.h"
 #import "AppDelegate.h"
+#import "Constants.h"
 @import Firebase;
 @import FirebaseAuth;
+@import FirebaseDatabase;
 
 @interface SignInViewController ()
+
+@property (strong, nonatomic) FIRDatabaseReference *ref;
 
 @end
 
@@ -74,17 +78,92 @@
         }
         else{
             NSLog(@"user Id : %@", user.uid);
-            if (![self.emailid.text  isEqualToString: @""]  && ![self.password.text  isEqualToString: @""]) {
-                [[UserCredentials sharedMySingleton]setEmailId:self.emailid.text];
+            if (![self.password.text  isEqualToString: @""]) {
+            
                 [[UserCredentials sharedMySingleton]setpassword:self.password.text];
+                [self readdata:user.uid];
              
-                
             }
             [[UserCredentials sharedMySingleton]setuid:user.uid];
-            [self pushVC];
+           
         }
     }];
 }
+
+
+-(void)readdata:(NSString *)checkuid{
+    
+    self.ref = [[FIRDatabase database] reference];
+    [[[[self.ref child:teachernode]queryOrderedByChild:uid]queryEqualToValue:checkuid] observeEventType:FIRDataEventTypeChildAdded withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+    
+            
+        
+        if (snapshot.exists) {
+            
+            
+            NSDictionary * dictionary=snapshot.value;
+            
+            [self setuserdata:dictionary];
+    }else{
+        [[AlertsWithVC sharedMySingleton]letsAlertUserWithMessage:@"Account Data Not Available . Please signup again!" WithVC:self];
+    }
+     
+    
+        
+        
+        
+    }];
+    
+    
+    
+    [[[[self.ref child:learnernode]queryOrderedByChild:uid]queryEqualToValue:checkuid] observeEventType:FIRDataEventTypeChildAdded withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        
+        
+        if (snapshot.exists) {
+            
+            NSDictionary * dictionary=snapshot.value;
+            
+            [self setuserdata:dictionary];
+            
+        
+        }else{
+            [[AlertsWithVC sharedMySingleton]letsAlertUserWithMessage:@"Account Data Not Available . Please signup again!" WithVC:self];
+        }
+        
+    }];
+    
+
+}
+
+
+
+-(void)setuserdata:(NSDictionary *)dictionary{
+
+    
+    NSString * username1= [dictionary valueForKey:username];
+    NSString * domain1 =[dictionary valueForKey:domain];
+    NSString * mobile = [dictionary valueForKey:mobilenumber];
+    NSString * email1 =[dictionary valueForKey:email];
+    NSString * linkedin1;
+    NSString * youtube1;
+    NSString * skills1;
+    linkedin1=[dictionary valueForKey:linkedin];
+    youtube1 =[dictionary valueForKey:youtubelink];
+    skills1 = [dictionary valueForKey:skills];
+    NSString * uid1 =[dictionary valueForKey:uid];
+    
+    [[UserCredentials sharedMySingleton]setlinkedin:linkedin1];
+    [[UserCredentials sharedMySingleton]setyoutube:youtube1];
+    [[UserCredentials sharedMySingleton]setskills:skills1];
+    [[UserCredentials sharedMySingleton]setmobilenumber:mobile];
+    [[UserCredentials sharedMySingleton]setEmailId:email1];
+    [[UserCredentials sharedMySingleton]setuid:uid1];
+    [[UserCredentials sharedMySingleton]setUserName:username1];
+    [[UserCredentials sharedMySingleton]setUserDomain:domain1];
+    [self pushVC];
+}
+
+
 
 -(void)pushVC{
     NSString * storyboardName = @"Main";

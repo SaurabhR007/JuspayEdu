@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E1BBB76ADBF2EF4EF2CE5DF6BBC77296"
+               BlueprintIdentifier = "2CEAB63EA7826B0B3DC8E0BD98BF3AEE"
                BuildableName = "libGoogleToolboxForMac.a"
                BlueprintName = "GoogleToolboxForMac"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E1BBB76ADBF2EF4EF2CE5DF6BBC77296"
+            BlueprintIdentifier = "2CEAB63EA7826B0B3DC8E0BD98BF3AEE"
             BuildableName = "libGoogleToolboxForMac.a"
             BlueprintName = "GoogleToolboxForMac"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E1BBB76ADBF2EF4EF2CE5DF6BBC77296"
+            BlueprintIdentifier = "2CEAB63EA7826B0B3DC8E0BD98BF3AEE"
             BuildableName = "libGoogleToolboxForMac.a"
             BlueprintName = "GoogleToolboxForMac"
             ReferencedContainer = "container:Pods.xcodeproj">

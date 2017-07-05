@@ -15,7 +15,7 @@ project 'JuspayEdu.xcodeproj'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'GeoFire', :git => 'https://github.com/firebase/geofire-objc.git'
-  pod "C2Call-SDK"
+
   
 
   

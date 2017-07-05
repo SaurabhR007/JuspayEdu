@@ -45,12 +45,7 @@
     }
     
     
-    self.affiliateid = @"<My AffiliateId>";
-    self.secret = @"<MyApplication Secret>";
-#ifdef __DEBUG
-    self.useSandboxMode = YES;
-#endif
-    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+
     
     
     
@@ -58,7 +53,7 @@
 }
 
 -(void)callTheNumber{
-    [[C2CallPhone currentPhone] callNumber:@"+91-8880161622"];
+ 
 }
 
 

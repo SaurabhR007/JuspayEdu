@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SocialCommunication/SocialCommunication.h>
+
 
 @import FirebaseDatabase;
 
 
 
-@interface AppDelegate : C2CallAppDelegate
+@interface AppDelegate : UIResponder<UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) FIRDatabaseReference *ref;

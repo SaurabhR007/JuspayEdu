@@ -73,13 +73,7 @@
 
 -(IBAction)signUpButtonClicked:(id)sender{
     
-    
-    FormValidations * validate =[[FormValidations alloc]init];
-   bool isValidMobile=[validate NSStringIsValidMobileNumber:self.mobilenumberTF.text];
-    
-    if (!isValidMobile) {
-        [[AlertsWithVC sharedMySingleton]letsAlertUserWithMessage:@"Looks Problem with Mobile Number" WithVC:self];
-    }
+
    
     NSInteger selectedSegment = _segmentedControl.selectedSegmentIndex;
     
