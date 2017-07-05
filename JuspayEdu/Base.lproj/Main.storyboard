@@ -319,14 +319,6 @@
                                     <action selector="cancelButtonClicked:" destination="1ut-ge-eak" eventType="touchUpInside" id="EPB-1c-u8h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-Ty-4JF">
-                                <rect key="frame" x="136" y="346" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Call"/>
-                                <connections>
-                                    <action selector="CallButtonClicked:" destination="1ut-ge-eak" eventType="touchUpInside" id="Nou-93-ggb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -369,24 +361,7 @@
                     <view key="view" contentMode="scaleToFill" id="h5m-nE-y59">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QT-p4-ORI">
-                                <rect key="frame" x="0.0" y="450" width="320" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="QB9-He-b3H"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="OsQ-en-g1B" kind="push" id="meJ-3B-EMf"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="5QT-p4-ORI" secondAttribute="trailing" id="9tx-hF-PDL"/>
-                            <constraint firstItem="cuN-AG-IQY" firstAttribute="top" secondItem="5QT-p4-ORI" secondAttribute="bottom" id="Ttq-qp-A7f"/>
-                            <constraint firstItem="5QT-p4-ORI" firstAttribute="leading" secondItem="h5m-nE-y59" secondAttribute="leading" id="fhi-14-NhC"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="EduJuspay" id="kKj-yW-EG2"/>
                 </viewController>
